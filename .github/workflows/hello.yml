@@ -10,6 +10,15 @@ on:
         options:
           - monalisa
           - cschleiden
+      limit-page:
+        type: choice
+        description: select limit page
+        required: true
+        options:
+          - "10"
+          - "100"
+          - "1000"
+          - "10000"
 
 jobs:
   hello_world:
